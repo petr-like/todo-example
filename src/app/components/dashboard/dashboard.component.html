@@ -1,0 +1,8 @@
+<toolbar class="toolbar"></toolbar>
+<div class="dashboard__container">
+  <ng-container *ngFor="let task of tasks$ | async">
+    <task [data]="task"></task>
+  </ng-container>
+
+</div>
+<footer class="footer"></footer>

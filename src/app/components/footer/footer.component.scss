@@ -1,0 +1,9 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-background;
+}

@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae quos labore odio vel, quidem numquam officia aperiam accusantium sequi.",
+      "deadline": "string",
+      "createDate": "string",
+      "updateDate": "string",
+      "isCompleted": false
+    }
+  ],
+  "profile": { "name": "typicode" }
+}
