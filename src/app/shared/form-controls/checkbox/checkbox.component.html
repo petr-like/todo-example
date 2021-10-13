@@ -1,0 +1,6 @@
+<mat-checkbox [class.done]="value"
+              [checked]="value"
+              [attr.disabled]="isDisabled ? true : null"
+              (change)="onChange($event)">
+  {{ title }}
+</mat-checkbox>

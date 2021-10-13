@@ -1,9 +1,14 @@
-@import 'variables';
+@import '../../../styles/variables';
 
 :host {
   display: flex;
-  min-height: 64px;
+  height: 54px;
   align-items: center;
   justify-content: center;
   background-color: $main-background;
+}
+
+
+.date {
+  margin-bottom: 0;
 }

@@ -5,7 +5,7 @@ import { ROUTES } from '@core';
 const routes: Routes = [
   {
     path: ROUTES.dashboard,
-    loadChildren: () => import('./components/dashboard.module').then((m) => m.DashboardModule),
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   {
     path: '**',

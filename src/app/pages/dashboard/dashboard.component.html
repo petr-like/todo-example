@@ -1,0 +1,11 @@
+<div class="tasks">
+  <ng-container *ngFor="let task of (tasks$ | async); trackBy: identify">
+    <task [data]="task"></task>
+  </ng-container>
+</div>
+<icon-button class="add-task"
+             color="primary"
+             [iconName]="'add'"
+             (click)="addToDo()">
+</icon-button>
+

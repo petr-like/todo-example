@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.mat-checkbox {
+  &.done {
+    &::ng-deep {
+      .mat-checkbox-label {
+        text-decoration: line-through;
+      }
+    }
+  }
+}

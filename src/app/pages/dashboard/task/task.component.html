@@ -1,0 +1,24 @@
+<div class="task-header">
+  <span><b>ID:</b> {{ data?.id }}</span>
+  <div class="task-info">
+    <span *ngIf="data?.updateDate" class="task-info__updated">
+      <b>Edited:</b> {{ data?.updateDate | date }}
+    </span>
+    <span *ngIf="data?.createDate" class="task-info__created">
+      <b>Create:</b> {{ data?.createDate | date }}
+    </span>
+  </div>
+</div>
+<div class="task-actions">
+  <checkbox class="task-actions__completed"
+            [title]="data?.title"
+            [formControl]="statusControl">
+  </checkbox>
+  <div>
+    <icon-button [iconName]="'edit'" (click)="onEdit()"></icon-button>
+    <icon-button [iconName]="'close'" (click)="onRemove()"></icon-button>
+  </div>
+</div>
+<p class="task-description">
+  {{ data?.description }}
+</p>

@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>{{ data?.title }}</h2>
+<mat-dialog-content>
+  <p *ngIf="data?.mode === 'delete'; else formContainer">
+    Are You sure?
+  </p>
+  <ng-template #formContainer>
+    <form [formGroup]="form">
+      <app-form-field [control]="form?.controls?.title"
+                      [required]="true"
+                      [label]="'Title'">
+        <input-control formControlName="title" placeholder="TODO title"></input-control>
+      </app-form-field>
+      <app-form-field [control]="form?.controls?.description"
+                      [required]="true"
+                      [label]="'Description'">
+        <input-control formControlName="description" placeholder="TODO description"></input-control>
+      </app-form-field>
+    </form>
+  </ng-template>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <raised-button mat-dialog-close>
+    Cancel
+  </raised-button>
+  <raised-button class="action"
+                 color="primary"
+                 [disabled]="!!form?.invalid"
+                 (click)="action()">
+    {{ data?.actionBtnTitle }}
+  </raised-button>
+</mat-dialog-actions>

@@ -1,13 +1,16 @@
 <mat-toolbar class="toolbar">
-  <button mat-icon-button class="toolbar__icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
+  <icon-button class="toolbar__icon"
+               [ariaLabel]="'Example icon-button with menu icon'"
+               [iconName]="'menu'">
+  </icon-button>
   <span>Task Manager</span>
   <span class="toolbar__spacer"></span>
-  <button mat-icon-button class="toolbar__icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="toolbar__icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+  <icon-button class="toolbar__icon favorite-icon"
+               [ariaLabel]="'Example icon-button with heart icon'"
+               [iconName]="'favorite'">
+  </icon-button>
+  <icon-button class="toolbar__icon"
+               [ariaLabel]="'Example icon-button with share icon'"
+               [iconName]="'share'">
+  </icon-button>
 </mat-toolbar>
