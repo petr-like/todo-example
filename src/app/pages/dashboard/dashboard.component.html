@@ -1,8 +1,13 @@
-<div class="tasks">
+<div *ngIf="(tasks$ | async)?.length; else noData" class="tasks">
   <ng-container *ngFor="let task of (tasks$ | async); trackBy: identify">
     <task [data]="task"></task>
   </ng-container>
 </div>
+
+<ng-template #noData>
+  <h1 class="empty-state">Add Some Tasks</h1>
+</ng-template>
+
 <icon-button class="add-task"
              color="primary"
              [iconName]="'add'"

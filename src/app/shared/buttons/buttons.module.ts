@@ -1,26 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-
-// Components
-import { RaisedButtonComponent } from './raised-button/raised-button.component';
-import { IconButtonComponent } from './icon-button/icon-button.component';
+import { RaisedButtonModule } from '@shared/buttons/raised-button/raised-button.module';
+import { IconButtonModule } from '@shared/buttons/icon-button/icon-button.module';
 
 @NgModule({
-  declarations: [
-    RaisedButtonComponent,
-    IconButtonComponent,
-  ],
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatIconModule,
+    RaisedButtonModule,
+    IconButtonModule,
   ],
   exports: [
-    RaisedButtonComponent,
-    IconButtonComponent,
+    RaisedButtonModule,
+    IconButtonModule,
   ],
 })
 export class ButtonsModule { }

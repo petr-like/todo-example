@@ -1,0 +1,8 @@
+<textarea [value]="value"
+          [placeholder]="placeholder || ''"
+          [attr.disabled]="isDisabled ? true : null"
+          [rows]="rows"
+          [cols]="cols"
+          (keyup)="onKeyup($event)"
+          (blur)="onBlur()">
+</textarea>

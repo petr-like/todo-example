@@ -3,15 +3,33 @@
   padding-bottom: 64px;
 }
 
+.empty-state {
+  padding: 60px 0;
+  text-align: center;
+}
+
 .tasks {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 16px 8px;
 
   task {
-    max-width: calc(50% - 16px);
-    flex-basis: calc(50% - 16px);
+    max-width: calc(33.333% - 16px);
+    flex-basis: calc(33.333% - 16px);
     margin: 8px;
+
+    @media (max-width: 1200px) {
+      max-width: calc(50% - 16px);
+      flex-basis: calc(50% - 16px);
+    }
+
+    @media (max-width: 680px) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
   }
 }
 
@@ -21,6 +39,9 @@
   right: 32px;
   width: 48px;
   height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 1px #707070;
 
   &::ng-deep {
     button {

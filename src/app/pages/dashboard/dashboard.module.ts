@@ -6,8 +6,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 import { DashboardRouterModule } from './dashboard.routers';
 
-import { CheckboxModule, FormFieldModule, InputModule } from '@shared/form-controls';
-import { ButtonsModule } from '@shared/buttons';
+import { FormControlsModule, ButtonsModule } from '@shared/index';
 
 // Components
 import { DashboardComponent } from './dashboard.component';
@@ -24,10 +23,8 @@ import { TaskDialogComponent } from './modals/task-dialog/task-dialog.component'
     CommonModule,
     DashboardRouterModule,
     ReactiveFormsModule,
-    CheckboxModule,
+    FormControlsModule,
     ButtonsModule,
-    InputModule,
-    FormFieldModule,
     MatDialogModule,
   ],
 })

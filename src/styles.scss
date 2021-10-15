@@ -37,12 +37,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: #ff6767;
 }
 
-input {
+input, textarea {
   display: block;
   width: 100%;
-  height: 40px;
   padding: 4px 8px;
   border: 1px solid #707070;
   border-radius: 4px;
   font-size: 16px;
+}
+
+input {
+  height: 40px;
 }
