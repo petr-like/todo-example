@@ -1,6 +1,6 @@
 <div *ngIf="(tasks$ | async)?.length; else noData" class="tasks">
   <ng-container *ngFor="let task of (tasks$ | async); trackBy: identify">
-    <task [data]="task"></task>
+    <task [data]="task" (change)="change($event)"></task>
   </ng-container>
 </div>
 

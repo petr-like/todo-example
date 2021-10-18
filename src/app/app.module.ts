@@ -12,12 +12,14 @@ import { ButtonsModule } from '@shared/buttons';
 // Components
 import { AppComponent } from './app.component';
 import { ToolbarComponent, FooterComponent } from './components';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     FooterComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

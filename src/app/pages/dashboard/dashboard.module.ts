@@ -7,6 +7,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { DashboardRouterModule } from './dashboard.routers';
 
 import { FormControlsModule, ButtonsModule } from '@shared/index';
+import { PipesModule } from '@shared/pipes/pipes.module';
 
 // Components
 import { DashboardComponent } from './dashboard.component';
@@ -26,6 +27,7 @@ import { TaskDialogComponent } from './modals/task-dialog/task-dialog.component'
     FormControlsModule,
     ButtonsModule,
     MatDialogModule,
+    PipesModule,
   ],
 })
 export class DashboardModule { }

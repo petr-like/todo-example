@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 import { DEFAULT_DIALOG_CONFIG, Task, TaskDialogData } from '@core';
@@ -24,7 +24,17 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.tasksService.getTasks().subscribe();
+    this.tasksService.getTasks().subscribe(
+      (data) => {
+        console.log('DATA', data);
+      },
+      (err) => {
+        console.log('err: ', err);
+      },
+      () => {
+        console.log('complete');
+      }
+    );
   }
 
   identify(index: number, item: Task): number {
@@ -42,5 +52,9 @@ export class DashboardComponent implements OnInit {
       ...DEFAULT_DIALOG_CONFIG,
       data,
     });
+  }
+
+  change(value: any) {
+    console.log('EMIT', value);
   }
 }

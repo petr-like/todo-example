@@ -2,10 +2,10 @@
   <span><b>ID:</b> {{ data?.id }}</span>
   <div class="task-info">
     <span *ngIf="data?.updateDate" class="task-info__updated">
-      <b>Edited:</b> {{ data?.updateDate | date }}
+      <b>Edited:</b> {{ data?.updateDate | shortDate }}
     </span>
     <span *ngIf="data?.createDate" class="task-info__created">
-      <b>Create:</b> {{ data?.createDate | date }}
+      <b>Create:</b> {{ data?.createDate | shortDate }}
     </span>
   </div>
 </div>

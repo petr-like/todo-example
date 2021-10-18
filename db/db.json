@@ -20,17 +20,9 @@
       "id": 1634135064532,
       "title": "Task 3",
       "description": "Do Something\nDescription",
-      "isCompleted": true,
+      "isCompleted": false,
       "createDate": 1634135064532,
       "updateDate": 1634135882580
-    },
-    {
-      "id": 1634135076986,
-      "title": "Task 4",
-      "description": "\nDo Something\nDescription",
-      "isCompleted": false,
-      "createDate": 1634135076986,
-      "updateDate": null
     },
     {
       "id": 1634135900667,
@@ -38,6 +30,22 @@
       "description": "Do Something\nDescription",
       "isCompleted": false,
       "createDate": 1634135900667,
+      "updateDate": null
+    },
+    {
+      "id": 1634307566511,
+      "title": "Technical Friday",
+      "description": "Prepare",
+      "isCompleted": false,
+      "createDate": 1634307566511,
+      "updateDate": null
+    },
+    {
+      "id": 1634313195104,
+      "title": "Таска 138",
+      "description": "Сделать тулбар",
+      "isCompleted": false,
+      "createDate": 1634313195104,
       "updateDate": null
     }
   ],
